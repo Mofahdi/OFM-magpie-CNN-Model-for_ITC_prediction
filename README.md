@@ -14,4 +14,4 @@ you might have to install more packages, but you most likely have the others
 ## References
 [1] "High Throughput Substrate Screening for Interfacial Thermal Management of β-Ga2O3 by Deep Convolutional Neural Network"
 the article should be available at https://scholar.google.com/citations?user=5tkWy4AAAAAJ&hl=en
-Please cite the above article
+<br>Please cite the above article
