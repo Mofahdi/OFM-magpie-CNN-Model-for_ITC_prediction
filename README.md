@@ -1,5 +1,5 @@
 # OFM-magpie-CNN-Model-for_ITC_prediction
-CNN model that predicts interfacial thermal conductance (ITC) using orbital field matrix (OFM) and magpie features
+CNN model with fused orbital field matrix (OFM) and magpie features that predicts interfacial thermal conductance (ITC).
 
 ### to run the scripts
 1. clone the repository<br>
