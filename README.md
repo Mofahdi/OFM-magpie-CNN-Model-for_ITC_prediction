@@ -4,7 +4,7 @@ CNN model that predicts interfacial thermal conductance (ITC) using orbital fiel
 ### to run the scripts
 1. clone the repository<br>
         > `https://github.com/Mofahdi/OFM-magpie-CNN-Regression`
-2. install the following packages: <br>1- sklearn, 2- seaborn, 3- matplotlib, 4- pymatgen, 5- matminer, 6- tensorflow<br>
+2. install the following packages: <br>1- sklearn, <br>2- seaborn, 3- matplotlib, 4- pymatgen, 5- matminer, 6- tensorflow<br>
 you might have to install more packages, but you most likely have the others
 3. unzip data.zip
 4.  run the following in the command line: <br>
