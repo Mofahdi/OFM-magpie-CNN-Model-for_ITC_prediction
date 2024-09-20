@@ -59,7 +59,13 @@ labels=train_valid_df['prop'].values
 
 def create_model():
 	# model 
-	model=my_model(ofm_channels=args.ofm_channels, ofm_kernels=args.ofm_kernels, magpie_channels=args.magpie_channels, magpie_kernels=args.magpie_kernels)
+	model=my_model(
+			ofm_channels=args.ofm_channels, 
+			ofm_kernels=args.ofm_kernels, 
+			magpie_channels=args.magpie_channels, 
+			magpie_kernels=args.magpie_kernels
+			)
+	
 	optimizer=tf.keras.optimizers.experimental.AdamW(learning_rate=args.lr)
 	#optimizer=tf.keras.optimizers.Adam()
 	model.compile(loss="mae", optimizer=optimizer, metrics="mae")
@@ -92,12 +98,14 @@ for train, valid in kfold.split(train_valid_df.prop.values):
 	# model training and obtaining the best model
 	filename="weights.best_"+str(fold_no)+".hdf5"
 	filepath=os.path.join(out_dir, filename)
-	checkpoint = ModelCheckpoint(filepath, 
-				monitor='val_loss', 
-				verbose=2, 
-				save_best_only=True, 
-				mode='min', 
-				save_weights_only=True)
+	checkpoint = ModelCheckpoint(
+					filepath, 
+					monitor='val_loss', 
+					verbose=2, 
+					save_best_only=True, 
+					mode='min', 
+					save_weights_only=True,
+					)
 
 	callbacks_list = [checkpoint]
 	# validation_data=(X_test, Y_test)
