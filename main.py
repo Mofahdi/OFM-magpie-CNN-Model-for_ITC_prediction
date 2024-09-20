@@ -44,7 +44,6 @@ args = parser.parse_args(sys.argv[1:])
 
 # dataset
 #data_path=os.path.join(os.getcwd(), 'train_mat')
-#data_path='/work/hulab/DATABASE/OQMD/91_electron_cloud/files'
 data_path=os.path.join(os.getcwd(), 'data')
 df=get_df(csv_path=os.getcwd(), data_path=data_path)
 train_valid_df, test_df=train_val_test_split(df, train_ratio=0.9, test_ratio=0.1)
