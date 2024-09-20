@@ -109,13 +109,15 @@ for train, valid in kfold.split(train_valid_df.prop.values):
 
 	callbacks_list = [checkpoint]
 	# validation_data=(X_test, Y_test)
-	history = model.fit(train_data, 
+	history = model.fit(
+				train_data, 
 				labels[train], 
 				batch_size=args.batch_size,
 				callbacks=callbacks_list, 
 				validation_data=(valid_data, labels[valid]),  
 				validation_batch_size=32, 
-				epochs=args.epochs)
+				epochs=args.epochs
+				)
 
 	model.load_weights(filepath)
 
