@@ -17,8 +17,9 @@ you might have to install other packages, but you most likely have them.
         > `python main.py --ofm_channels 32 32 64 --ofm_kernels 5 3 3 --magpie_channels 32 48 64 --magpie_kernels 3 3 3 -b 32 --lr 0.001 --epochs 50 --output_dir "results"`
     <br>Note: you have to type three integers in the *_channels and *_kernels because that is what the model requires otherwise you will get an error. 
 
-## References
+## Credit & References
 [1] Al-Fahdi, M.; Hu, M. High Throughput Substrate Screening for Interfacial Thermal Management of β-Ga2o3 by Deep Convolutional Neural Network. **Journal of Applied Physics** *2024*, 135 (20).
 <br>
-<br>the article should be available at this [link](https://digital.csic.es/bitstream/10261/360878/1/AlFahdi_ApplPhysRev_2024_editorial.pdf)
-<br>Please cite the above article if you use the code
+
+* the code was used to produce the work in the above article which should be available at this [link](https://digital.csic.es/bitstream/10261/360878/1/AlFahdi_ApplPhysRev_2024_editorial.pdf). Please cite the above article if you use the code
+* Please consider reading my published work in Google Scholar using this [link](https://scholar.google.com/citations?user=5tkWy4AAAAAJ&hl=en&oi=ao) thank you :)
